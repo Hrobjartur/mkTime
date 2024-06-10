@@ -1,0 +1,174 @@
+/* Mandatory so on short pages, footer stays at the bottom of view, not of content */
+body, html {
+    height: 100% !important;
+}
+/* Mandatory so on short pages, footer stays at the bottom of view, not of content */
+.wrapper {
+    min-height: 100% !important;
+    display: flex;
+    flex-direction: column;
+}
+/* Mandatory so on short pages, footer stays at the bottom of view, not of content */
+.content {
+    flex: 1 !important;
+}
+
+.navbar-brand{
+    font-family: "Protest Guerrilla", sans-serif;
+}
+
+.navbar{
+    font-family: Verdana, serif;
+    font-size: 1em;
+}
+/* Nav buttons */
+.nav-item:hover{
+    color: azure;
+    background-color:  rgb(19, 59, 59);
+    border-radius: 5px;
+    transition: background-color 0.25s;
+}
+
+.nav-item:active{
+    background-color: rgb(47, 124, 98);
+}
+
+.dropdown-item:hover{
+    color: azure;
+    background-color: rgb(42, 71, 71);
+}
+
+.dropdown-item:active{
+    background-color: rgb(47, 124, 98);
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+}
+
+.col-md-3{
+    text-align: center;
+}
+
+.col-md-8{
+    text-align: center;
+    margin: auto;
+}
+
+.col-sm-6{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border: 0;
+}
+
+hr{
+    color: white;
+}
+
+.bgintro {
+    background-image: url(img/bg-intro.png);
+    border-radius: 10px;
+}
+
+.signInBox{
+    background-color: rgb(46, 73, 73);
+    color: azure;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+#signInBtn{
+    background-color: rgb(25, 135, 84);
+    color: azure;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+#signInBtn:hover{
+    background-color: rgb(21, 115, 71);
+}
+
+#signInBtn:active{
+    background-color: rgb(19, 59, 59);
+}
+
+.loginImage{
+    background-image: url(img/signInImage.png);
+}
+
+#cancelBtn{
+    background-color: rgb(161, 161, 161);
+    color: azure;
+    border-radius: 10px;
+    padding: 10px 15px;
+}
+
+#cancelBtn:hover{
+    background-color: rgb(77, 77, 77);
+}
+
+#cancelBtn:active{
+    background-color: rgb(161, 161, 161);
+}
+/* Logout button */
+.logout {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.logout:hover {
+    background-color: hsl(0, 60%, 40%);
+}
+
+.logout:active {
+    background-color: hsl(0, 60%, 60%);
+}
+/* newArrivals animation */
+.movingBg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="lime" fill-opacity="0.10" class="bi bi-stopwatch-fill" viewBox="0 0 40 40"><path d="M6.5 0a.5.5 0 0 0 0 1H7v1.07A7.001 7.001 0 0 0 8 16a7 7 0 0 0 5.29-11.584l.013-.012.354-.354.353.354a.5.5 0 1 0 .707-.707l-1.414-1.415a.5.5 0 1 0-.707.707l.354.354-.354.354-.012.012A6.97 6.97 0 0 0 9 2.071V1h.5a.5.5 0 0 0 0-1zm2 5.6V9a.5.5 0 0 1-.5.5H4.5a.5.5 0 0 1 0-1h3V5.6a.5.5 0 1 1 1 0"/></svg>');
+    background-repeat: repeat;
+    animation: marquee 30s infinite linear;
+}
+  
+@keyframes marquee {
+    0% {
+      background-position: 0;
+    }
+  
+    100% {
+      background-position: -1190px;
+    }
+}
+/* BG logo for marquee */
+.hhcards {
+    border-radius: 10px;
+    background-image: url("img/mktimelogo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+}
+
+.imgAddedToCart {
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.alert {
+    border-radius: 25px;
+}
+/* Short (30ch) Item Desc in Cart */
+.descTruncate {
+    display: inline-block;
+    max-width: 30ch;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
